@@ -35,9 +35,6 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="{% url 'dashboard' %}">Home</a>
-            </li>
             <li class="nav-item active">
                 <a class="nav-link" href="{% url 'training' %}">Training <span class="sr-only">(current)</span></a>
             </li>
@@ -49,86 +46,28 @@
 </nav>
 
 <!-- Main Section -->
-{% block js %}
-    <script type="text/javascript">
-        $(document).ready(function () {
-
-            let kmeans = {};
-            let svm = {};
-            let startDate = new Date();
-            let endDate = new Date();
-
-            $("#fileUploadKmeans").change(function () {
-                <!-- Handle Fileupload from k means -->
-                kmeans = $(this).val().replace(/C:\\fakepath\\/i, '')
-
-                // set name to upload field
-                $('#kmsLabel').text(kmeans)
-
-            });
-            $("#fileUploadSVM").change(function () {
-                <!-- Handle Fileupload from svm -->
-                alert("ALARM SVM")
-            })
-        })
-    </script>
-{% endblock js %}
-
-<div class="row justify-content-md-center" style="margin-top: 50px">
-    <div class="card" style="width: 40%">
-        <div class="card-header">
-            K-Means
-        </div>
-        <div class="card-body">
-            <div class="form-group">
-                <label>Set Start Time</label>
-                <input type='datetime-local' class="form-control" id="startTime"/>
-            </div>
-            <div class="form-group">
-                <label>Set End Time</label>
-                <input type='datetime-local' class="form-control" id="endTime"/>
-            </div>
-
-
-
-
-            <a class="btn btn-primary" href="{% url 'train_kmeans' %}">Train Model</a>
-            <hr/>
-            <div>
-                <p>Training Time: 1337 Days</p>
-                <div style="height: 300px; background: #f1f1f1">
-                    Chart
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
 <div class="row justify-content-md-center" style="margin-top: 50px">
     <div class="card" style="width: 40%">
         <div class="card-header">
             SVM
         </div>
         <div class="card-body">
-            <p>MachineID: <input type='text' style="width: 25%; margin-left: 20px"/>
-                MachineType: <input type='text' style="width: 25%; margin-left: 20px"/>
-            </p>
-            <p>MachineID: <input type='text' style="width: 25%; margin-left: 20px"/>
-                MachineType: <input type='text' style="width: 25%; margin-left: 20px"/>
-            </p>
-            {% csrf_token %}
-            <div class="custom-file">
-                <form method="post" enctype="multipart/form-data" style="margin-bottom: 25px">
-                    <input type="file" class="custom-file-input" id="fileUploadSVM" name="training_data">
-                    <label class="custom-file-label" for="customFile">Choose training data</label>
+            <form method="post" enctype="multipart/form-data" style="margin-bottom: 25px">
+                {% csrf_token %}
+                <form method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <input type="file" name="svm">
+                    <button type="submit">Upload</button>
                 </form>
-            </div>
-            <a class="btn btn-primary" href="{% url 'train_svm' %}">Train Model</a>
+            </form>
+
+            <a class="btn btn-primary" href="{% url 'train_svm' %}">Train</a> {{ svm }}
             <hr/>
             <div>
-                <p>Training Time: 1337 Days</p>
-                <div style="height: 300px; background: #f1f1f1">
-                    Chart
+                <div>
+                    {% if success %}
+                        <p>Sucessfully trained SVM</p>
+                    {% endif %}
                 </div>
             </div>
         </div>

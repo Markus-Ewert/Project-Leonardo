@@ -43,9 +43,6 @@
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="{% url 'dashboard' %}">Home</a>
-            </li>
-            <li class="nav-item">
                 <a class="nav-link" href="{% url 'training' %}">Training</a>
             </li>
             <li class="nav-item active">
@@ -59,72 +56,9 @@
 <div class="row justify-content-md-center" style="margin-top: 50px">
     <div class="card" style="width: 40%">
         <div class="card-header">
-            K-Means
-        </div>
-        <div class="card-body">
-            <p>Success Rate: 73%</p>
-            <p>Error Rate: 27%</p>
-            <form method="post" enctype="multipart/form-data" style="margin-bottom: 25px">
-                {% csrf_token %}
-                <form method="post" enctype="multipart/form-data">
-                    {% csrf_token %}
-                    <input type="file" name="kmeans">
-                    <button type="submit">Upload</button>
-                </form>
-            </form>
-
-            {{ kmeans }}
-
-            <a class="btn btn-primary" href="{% url 'predict_kmeans' %}">Predict</a>
-            <hr/>
-
-            {% block chartContent %}
-                <div>
-                    <p>Upload a CSV file and hit the predict button!</p>
-                </div>
-            {% endblock %}
-
-        </div>
-    </div>
-</div>
-
-<div class="row justify-content-md-center" style="margin-top: 50px">
-    <div class="card" style="width: 40%">
-        <div class="card-header">
-            Logistic Regression
-        </div>
-        <div class="card-body">
-            <p>Success Rate: 73%</p>
-            <p>Error Rate: 27%</p>
-            <form method="post" enctype="multipart/form-data" style="margin-bottom: 25px">
-                {% csrf_token %}
-                <form method="post" enctype="multipart/form-data">
-                    {% csrf_token %}
-                    <input type="file" name="logistic">
-                    <button type="submit">Upload</button>
-                </form>
-
-                {% if uploaded_file_url %}
-                    <p>File uploaded at: <a href="{{ uploaded_file_url }}">{{ uploaded_file_url }}</a></p>
-                {% endif %}
-            </form>
-            <button type="button" class="btn btn-primary">Predict</button>
-            <hr/>
-            {% block result %}
-                <h1>No results</h1>
-            {% endblock %}
-        </div>
-    </div>
-</div>
-
-<div class="row justify-content-md-center" style="margin-top: 50px">
-    <div class="card" style="width: 40%">
-        <div class="card-header">
             Support Vector Machine
         </div>
         <div class="card-body">
-            <p>Success Rate: 73%</p>
-            <p>Error Rate: 27%</p>
             <form method="post" enctype="multipart/form-data" style="margin-bottom: 25px">
                 {% csrf_token %}
                 <form method="post" enctype="multipart/form-data">
@@ -132,89 +66,12 @@
                     <input type="file" name="svm">
                     <button type="submit">Upload</button>
                 </form>
-
-                {% if uploaded_file_url %}
-                    <p>File uploaded at: <a href="{{ uploaded_file_url }}">{{ uploaded_file_url }}</a></p>
-                {% endif %}
             </form>
-
-            <button type="button" class="btn btn-primary">Predict</button>
+            <a class="btn btn-primary" href="{% url 'predict_svm' %}">Predict</a> {{ svm }}
             <hr/>
-            <div>
-                <p>Result:</p>
-                <table class="table table-hover">
-                    <thead>
-                    <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">MachineId</th>
-                        <th scope="col">Device</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>5CCF7F92D98B</td>
-                        <td>Coffeemaker</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>5CCF7F922FF4</td>
-                        <td>Fridge</td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="row justify-content-md-center" style="margin-top: 50px">
-    <div class="card" style="width: 40%">
-        <div class="card-header">
-            Recurrent Neural Network
-        </div>
-        <div class="card-body">
-            <p>Success Rate: 73%</p>
-            <p>Error Rate: 27%</p>
-            <form method="post" enctype="multipart/form-data" style="margin-bottom: 25px">
-                {% csrf_token %}
-                <form method="post" enctype="multipart/form-data">
-                    {% csrf_token %}
-                    <input type="file" name="svm">
-                    <button type="submit">Upload</button>
-                </form>
-
-                {% if uploaded_file_url %}
-                    <p>File uploaded at: <a href="{{ uploaded_file_url }}">{{ uploaded_file_url }}</a></p>
-                {% endif %}
-            </form>
-
-            <button type="button" class="btn btn-primary">Predict</button>
-            <hr/>
-            <div>
-                <p>Result:</p>
-                <table class="table table-hover">
-                    <thead>
-                    <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">MachineId</th>
-                        <th scope="col">Device</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>5CCF7F92D98B</td>
-                        <td>Coffeemaker</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>5CCF7F922FF4</td>
-                        <td>Fridge</td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
+            {% block resultSVM %}
+                <p>Upload a file an hit the predict button.</p>
+            {% endblock %}
         </div>
     </div>
 </div>

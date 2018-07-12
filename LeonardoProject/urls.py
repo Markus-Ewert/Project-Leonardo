@@ -21,12 +21,10 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.dashboard, name='dashboard'),
-    path('predictions/', views.predictions, name='predictions'),
+    path('', views.predictions, name='predictions'),
     path('training/', views.training, name='training'),
     path('trainSVM/', views.train_svm, name='train_svm'),
-    path('trainKmeans/', views.train_kmeans, name='train_kmeans'),
-    path('predictKmeans/', views.predict_kmeans, name='predict_kmeans')
+    path('predictSVM/', views.predictSVM, name='predict_svm')
 ]
 
 if settings.DEBUG:

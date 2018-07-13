@@ -2,20 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e72c8ce-df4d-43e5-a025-ade70a5ca14b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/media/LeonardoProject/files/svm_train.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeonardoProject/training.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LeonardoProject/predictions.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/LeonardoProject/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/LeonardoProject/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LeonardoProject/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/LeonardoProject/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/LeonardoProject/files/data_june.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/LeonardoProject/files/logistic.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/LeonardoProject/files/smv.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/LeonardoProject/files/svm.csv" beforeDir="false" afterPath="$PROJECT_DIR$/media/LeonardoProject/files/svm.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/LeonardoProject/files/svm.pkl" beforeDir="false" afterPath="$PROJECT_DIR$/media/LeonardoProject/files/svm.pkl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/dashboard.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/loading.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/predictions.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/predictions.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/svm.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/svm.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/predictions.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/training.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/training.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,14 +30,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LeonardoProject/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
-              <folding>
-                <element signature="e#0#14#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="15">
+              <caret line="1" column="26" lean-forward="true" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -54,8 +42,8 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LeonardoProject/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="24" column="36" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="36" />
+            <state relative-caret-position="327">
+              <caret line="23" column="49" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
               <folding>
                 <element signature="e#639#671#0" expanded="true" />
               </folding>
@@ -63,20 +51,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="predictions.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/predictions.html">
+      <file leaf-file-name="training.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/training.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="69" column="91" selection-start-line="69" selection-start-column="91" selection-end-line="69" selection-end-column="91" />
+            <state relative-caret-position="-137">
+              <caret line="36" column="31" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="training.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/training.html">
+      <file leaf-file-name="training.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/LeonardoProject/training.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="871">
-              <caret line="65" column="17" lean-forward="true" selection-end-line="77" selection-end-column="7" />
+            <state relative-caret-position="132">
+              <caret line="39" column="38" selection-start-line="39" selection-start-column="38" selection-end-line="39" selection-end-column="38" />
+              <folding>
+                <element signature="e#0#47#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -128,14 +119,14 @@
         <option value="$PROJECT_DIR$/templates/kmeans.html" />
         <option value="$PROJECT_DIR$/templates/logReg.html" />
         <option value="$PROJECT_DIR$/templates/rnn.html" />
-        <option value="$PROJECT_DIR$/LeonardoProject/urls.py" />
         <option value="$PROJECT_DIR$/LeonardoProject/predictions.py" />
         <option value="$PROJECT_DIR$/media/LeonardoProject/files/svm_training.csv" />
         <option value="$PROJECT_DIR$/templates/predictions.html" />
-        <option value="$PROJECT_DIR$/LeonardoProject/views.py" />
         <option value="$PROJECT_DIR$/media/LeonardoProject/files/svm_train.csv" />
-        <option value="$PROJECT_DIR$/LeonardoProject/training.py" />
+        <option value="$PROJECT_DIR$/LeonardoProject/views.py" />
+        <option value="$PROJECT_DIR$/LeonardoProject/urls.py" />
         <option value="$PROJECT_DIR$/templates/training.html" />
+        <option value="$PROJECT_DIR$/LeonardoProject/training.py" />
       </list>
     </option>
   </component>
@@ -342,9 +333,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1620">
           <caret line="112" column="29" selection-start-line="112" selection-start-column="29" selection-end-line="112" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -417,9 +405,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="705">
           <caret line="49" column="16" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -563,46 +548,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/training.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="871">
-          <caret line="65" column="17" lean-forward="true" selection-end-line="77" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/predictions.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="69" column="91" selection-start-line="69" selection-start-column="91" selection-end-line="69" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/LeonardoProject/predictions.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="44" selection-end-line="87" />
           <folding>
             <element signature="e#0#47#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LeonardoProject/training.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="32" column="16" lean-forward="true" selection-end-line="55" />
-          <folding>
-            <element signature="e#0#47#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LeonardoProject/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="24" column="36" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="36" />
-          <folding>
-            <element signature="e#639#671#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -616,10 +567,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/LeonardoProject/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+        <state relative-caret-position="15">
+          <caret line="1" column="26" lean-forward="true" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/predictions.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="59" column="14" lean-forward="true" selection-end-line="79" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LeonardoProject/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="23" column="49" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
           <folding>
-            <element signature="e#0#14#0" expanded="true" />
+            <element signature="e#639#671#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/training.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-137">
+          <caret line="36" column="31" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LeonardoProject/training.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="39" column="38" selection-start-line="39" selection-start-column="38" selection-end-line="39" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
           </folding>
         </state>
       </provider>

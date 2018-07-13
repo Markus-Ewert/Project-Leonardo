@@ -21,10 +21,8 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.predictions, name='predictions'),
-    path('training/', views.training, name='training'),
+    path('', views.training, name='predictions'),
     path('trainSVM/', views.train_svm, name='train_svm'),
-    path('predictSVM/', views.predictSVM, name='predict_svm')
 ]
 
 if settings.DEBUG:
